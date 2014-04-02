@@ -544,7 +544,7 @@ fieldset.options {
 }
 @media (min-width: 1000px) {
   .flickrs, .youtubes, .google-pluses {
-    width: 900px;
+    width: 1200px;
   }
   .google-plus {
     width: 450px;
