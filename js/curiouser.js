@@ -63,6 +63,9 @@ $(document).ready( function() {
      	$(".circleSm").fadeToggle(5000,"swing");
      	$(".circleMed").fadeToggle(5000,"swing");
      });
+     $(".google-plus").on("click", function() {
+			$(this).find(".profile-link").click();
+     });
 
 });	
 // Display an object's properties (non-inherited) and associated values
