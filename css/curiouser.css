@@ -575,11 +575,13 @@ fieldset.options {
   }
 }
 @media (max-width: 525px) {
+    html { background: purple; }
   .flickrs, .youtubes {
     width: 250px;
   }
 }
 @media (max-width: 320px) {
+   html { background: green; }
   #logo {
    display: none;
   }
@@ -587,7 +589,7 @@ fieldset.options {
     width: 100%;
   }
   .google-plus {
-    width: 300px;
+    width: 280px;
   }
   form { 
     padding-left: 0;
