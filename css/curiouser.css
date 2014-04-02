@@ -130,7 +130,7 @@ header h1 {
  color: #54407d;
  font-size: 2.3em;
  text-align: center;
- letter-spacing: 0.40em;
+ letter-spacing: 0.35em;
   text-shadow: 2px 5px 6px rgba(0,0,0,0.2),            
      0px -5px 35px rgba(255,255,255,0.3); 
   margin: 20px auto 0px auto ;
@@ -579,5 +579,15 @@ fieldset.options {
     width: 250px;
   }
 }
-
+@media (max-width: 319px) {
+  #logo {
+   display: none;
+  }
+  form { 
+    padding-left: 0;
+  }
+  header h1 {
+    padding-left: 20px;
+  }
+}
 
