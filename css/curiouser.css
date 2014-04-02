@@ -136,13 +136,6 @@ header h1 {
   margin: 20px auto 0px auto ;
   padding-left: 70px;
 }
-/*
-header img {
-absolute;
-  top: 0;
-  left: 0;
-}
-*/
 .circle {
   padding-top:0px;
   font-size: 2.0em;
@@ -162,7 +155,7 @@ absolute;
  .circleSm {
   position: absolute;
   top: 0px;
-  left: 0px;
+  left: 10px;
   padding-top:0px;
   width:65px; 
   height:65px; 
@@ -175,8 +168,8 @@ absolute;
   left: 0;
   display: none;
   padding-top:0px;
-  width:150px; 
-  height:150px; 
+  width:125px; 
+  height:125px; 
   border-radius:50%; 
   border: 3px solid black;
  }
