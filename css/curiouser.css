@@ -580,8 +580,8 @@ fieldset.options {
     width: 250px;
   } 
 }
-/* Only applies while screen is 320px or less */
-@media (max-width: 320px) {
+/* Only applies while screen is 321px or less */
+@media (max-width: 321px) {
   header #logo {
    display: none;
   }
