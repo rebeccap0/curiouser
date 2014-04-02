@@ -184,7 +184,6 @@ absolute;
   max-width: 600px;
 }
 .lala {
-  border: 1px solid green;
 }
 .lala .flickrs > h2, .lala .youtubes > h2, .lala .google-pluses > h2 {
 	font-family: "ralewayheavy", Calibri, Verdana, sans-serif;
@@ -293,11 +292,9 @@ figure figcaption {
 .google-pluses .col-one {
 	float: left;
 	margin-right:25px;
-  border:1px solid green;
 }
 .google-pluses .col-two {
 	float: left;
-  border:1px solid green;
 }
 .google-plus h2 {
 	color: #313131;
@@ -543,23 +540,15 @@ fieldset.options {
 .clearfix {
 	clear: both;
 }
+/* RESPONSIVE */
 /*
-@media (max-width: 400px) {
-  html { background: #eee; }
-}
 @media (min-width: 320px) and (max-width: 400px) {
   html { background: green; }
 }
 */
-@media (max-width: 525px) {
+@media (max-width: 800px) {
   .flickrs, .youtubes {
-    width: 250px;
-  }
-}
-@media (max-width: 600px) {
-   fieldset.searchflds, fieldset.options{
-    float: none;
-    margin-left: 50px;
+    width: 520px;
   }
 }
 @media (max-width: 750px) {
@@ -569,9 +558,16 @@ fieldset.options {
     margin: 0 auto;
   }
 }
-@media (max-width: 800px) {
-  .flickrs, .youtubes {
-    width: 520px;
+@media (max-width: 600px) {
+   fieldset.searchflds, fieldset.options{
+    float: none;
+    margin-left: 50px;
   }
 }
+@media (max-width: 525px) {
+  .flickrs, .youtubes {
+    width: 250px;
+  }
+}
+
 
