@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Curiouser</title>
+	<link rel="stylesheet" href="css/curiouser.css">
+	<script src="http://code.jquery.com/jquery-latest.min.js" type='text/javascript'></script>
+	<script src="js/curiouser.js" type='text/javascript'></script>
+	<script src="https://apis.google.com/js/client.js?onload=load" type='text/javascript' ></script>
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+</head>
+<body>
+	<header>
+		<img src="images/chesire20.jpg" alt="We're all a little crazy here" name="logo" id="logo" class="circleSm">
+		<div>
+		<div class="crazy">
+			<img src="images/chesire11.jpg" class="circleMed" alt="We're all a little crazy here">
+		</div>
+		
+		<h1 title="Curiouser">Curiouser</h1>
+	</header>
+	<div class="container">
+		<div class="list">	
+			<form class="listit-getter" onsubmit="return false;">
+				<fieldset>
+					<input type="text" placeholder='Enter your search terms' name="tag" size="30" autofocus required>
+					<input type="submit" value="Search">
+					<label><input type="checkbox" checked name="flickr" id="flickr">Flickr</label>
+					 <label><input type="checkbox" checked name="youtube" id="youtube" >YouTube</label>
+					 <label><input type="checkbox" checked name="google-plus" id="google-plus" >Google Plus</label>
+				</fieldset>
+			</form>
+		</div>
+		<!-- Search results -->
+		<div class="lala">
+			<div class="flickrs">
+				<ul class="polaroids">
+				</ul>
+			</div>
+			<div class="youtubes"></div>
+			<div class="google-pluses">
+				<div class="col-one"></div>
+				<div class="col-two"></div>
+				<br class="clearfix">
+			</div>
+			<div class="clearfix">	
+		</div>
+
+		<div class="test"></div>
+	
+		<!-- Templates for search items -->
+		<div class="templates hidden">
+			<!-- YouTube Template -->
+			<div class="result youtube">
+				<figure>
+					<figcaption class="name fade"></figcaption>
+				</figure>
+				<hr class="faded">
+				<div class="content"></div>
+			</div>
+			
+			<!-- Flickr Template -->
+			<ul class="result flickr">
+				<li>
+				</li>
+			</ul>
+			
+			<!-- Google Plus Template -->
+			<div class="google-plus">
+				<div class="p-name">
+					<a class="profile-link" href="#" title="" target=_blank><img src="" alt="" class="circle"></a>
+					<span class="title"></span>
+				</div>
+				<div class="p-content"></div>
+			</div>
+
+			<div class="error">
+				<p>Uh-oh! Something went wrong with your request. Here's what we know:</p>
+			</div>
+		</div><!-- templates -->
+	</div><!-- container -->
+</body>
+</html>
