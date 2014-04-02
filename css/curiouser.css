@@ -139,6 +139,19 @@ absolute;
   top: 0;
   left: 0;
 }
+.circle {
+  padding-top:8px;
+  font-size: 2.0em;
+  font-weight: bold;
+  width:55px; 
+  height:55px; 
+  position:relative; 
+  float:left; 
+  background: #a3b0e6;
+  border-radius:50%; 
+  margin: -5px 5px 0px 5px; 
+  text-align: center;
+}
  .circleSm {
   position: absolute;
   top: 10px;
