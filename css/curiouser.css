@@ -588,15 +588,12 @@ fieldset.options {
   .container {
     width: 100%;
   }
-  .google-plus, .google-pluses {
-    width: 280px;
+  .google-plus, .google-pluses, .google-pluses {
+    width: 260px;
   }
   .google-plus img {
-    max-width: 260px;
-    max-height: 260px;
-  }
-  .flickrs, .youtubes, .google-pluses{
-    width: 320px;
+    max-width: 240px;
+    max-height: 240px;
   }
   form { 
     padding-left: 0;
