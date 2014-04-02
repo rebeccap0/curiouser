@@ -586,6 +586,9 @@ fieldset.options {
   .container {
     width: 100%;
   }
+  .google-plus {
+    width: 300px;
+  }
   form { 
     padding-left: 0;
   }
