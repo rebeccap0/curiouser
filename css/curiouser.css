@@ -558,10 +558,13 @@ fieldset.options {
   }
 }
 @media (max-width: 770px) {
-  .google-pluses .col-one, .google-pluses .col-two {
+  .google-pluses .col-one, .google-pluses .col-two, .google-pluses {
     float: none;
     width: 350px;
     margin: 0 auto;
+  }
+  .flickrs, .youtubes {
+    width: 770px;
   }
 }
 @media (max-width: 600px) {
