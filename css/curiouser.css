@@ -548,11 +548,11 @@ fieldset.options {
     width: 1000px;
   }
   .google-plus {
-    width: 450px;
+    width: 470px;
   }
   .google-plus img {
-   max-width: 430px;
-   max-height: 430px;
+   max-width: 450px;
+   max-height: 450px;
   }
 }
 @media (max-width: 800px) {
