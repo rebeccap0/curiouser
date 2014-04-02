@@ -535,19 +535,20 @@ fieldset.options {
 @media (min-width: 320px) and (max-width: 400px) {
   html { background: green; }
 }
-*/
+
 @media (min-width: 1000px) {
   html { background: purple; }
-  }
+}
 @media (min-width: 1200px) {
   html { background: green; }
 }
+*/
 @media (min-width: 1000px) {
   .flickrs, .youtubes, .google-pluses {
-    width: 1200px;
+    width: 1000px;
   }
   .google-plus {
-    width: 450px;
+    width: 425px;
   }
   .google-plus img {
    max-width: 430px;
