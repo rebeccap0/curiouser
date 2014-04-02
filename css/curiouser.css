@@ -448,9 +448,10 @@ form {
   border: 0px solid #d0d2d5;
   border-bottom: 0px solid #bebfc2;
   border-radius: 4px;
-  margin: 0 0 20px 0;
+  margin: 0 0 50px 0;
   padding: 0px;
   width: 800px;
+  margin-left:50px;
 }
 label {
   color: #404853;
@@ -561,7 +562,9 @@ fieldset.options {
 @media (max-width: 600px) {
    fieldset.searchflds, fieldset.options{
     float: none;
-    margin-left: 50px;
+  }
+  fieldset.options {
+    margin-left: 10px;
   }
 }
 @media (max-width: 525px) {
