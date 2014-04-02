@@ -196,7 +196,6 @@ absolute;
 .youtubes {
   width: 100%;
   margin: 0 auto;
-  border: 1px solid blue;
 }
 .youtubes .name {
 	font-family: ralewaysemibold;
@@ -211,9 +210,7 @@ absolute;
 	box-shadow: inset 4px 4px 7px 0px rgba(50, 50, 50, 0.5);
 }
 .flickrs {
-
   margin: 0 auto;
-  border: 1px dashed blue;
 }
 .flicker, .flickr figure {
 	text-align: center;
@@ -568,6 +565,8 @@ fieldset.options {
 @media (max-width: 750px) {
   .google-pluses .col-one, .google-pluses .col-two {
     float: none;
+    width: 350px;
+    margin: 0 auto;
   }
 }
 @media (max-width: 800px) {
