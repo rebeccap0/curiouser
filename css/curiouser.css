@@ -423,13 +423,12 @@ ul.polaroids li:nth-child(11n) a {
   left: -5px;
 }
 /* Scale the images on hover, add transitions for smoothing things out, and ensure the hover appears on top */
-ul.polaroids a:hover {
+.lala .flickrs ul.polaroids a:hover {
   -webkit-transform: scale(1.25); 
    -moz-transform: scale(1.25);
   transform: scale(1.25);
   box-shadow: 0 3px 6px rgba(0,0,0,.5);
   position: relative; 
-  z-index: 1500;
 }
 .error {
 	background-color: #F78181;
