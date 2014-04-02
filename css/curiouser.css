@@ -305,6 +305,9 @@ figure figcaption {
 	color:#313131;
 	font-size: 1.3em;
 }
+.google-plus:hover {
+  border-color: black;
+}
 .google-plus a {
 	color: #999;
 }
