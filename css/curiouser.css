@@ -576,22 +576,22 @@ fieldset.options {
 }
 /* Only applies while screen is 525px or less */
 @media (max-width: 525px) {
- .flickrs, .youtubes {
+ .lala .flickrs, .lala .youtubes {
     width: 250px;
   } 
 }
 /* Only applies while screen is 320px or less */
 @media (max-width: 320px) {
-  #logo {
+  header #logo {
    display: none;
   }
   .container {
     width: 100%;
   }
-  .google-plus, .google-pluses {
+   .lala .google-pluses .col-one, .lala .google-pluses .col-two, .lala .google-plus, .lala .google-pluses {
     width: 260px;
   }
-  .google-plus img {
+  .lala .google-plus img {
     max-width: 240px;
     max-height: 240px;
   }
