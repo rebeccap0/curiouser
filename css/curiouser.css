@@ -177,11 +177,10 @@ absolute;
   border-radius:50%; 
   border: 3px solid black;
  }
-
 .list {
   margin: 0 auto 0 auto;
- /*width: 600px;*/
   max-width: 600px;
+  height:40px;
 }
 .lala {
 }
@@ -512,17 +511,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008080', end
 fieldset.searchflds {
   width: 330px;
   float: left;
-
 }
 fieldset.options {
   width: 270px;
   float: left;
 }
+/*
 .options:after {
     content:'';
     display:block;
     clear: both;
 }
+*/
 .listit-getter label {
   color: #888;
   cursor: pointer;
@@ -565,6 +565,7 @@ fieldset.options {
   }
   fieldset.options {
     margin-left: 10px;
+    margin-top: -10px;
   }
 }
 @media (max-width: 525px) {
