@@ -60,7 +60,8 @@ $(document).ready( function() {
     });
 
      $("#logo").hover(function() {
-     	$(".crazy").fadeToggle(2000,"swing");
+     	$(".circleSm").fadeToggle(5000,"swing");
+     	$(".circleMed").fadeToggle(5000,"swing");
      });
 
 });	
@@ -85,13 +86,6 @@ var youtube = function (vid){
 	}
 	img.append('<a href="http://www.youtube.com/watch?v=' + vid.id.videoId + '" target=_blank><img src="' + vid.snippet.thumbnails.medium.url + '" alt="' +vid.snippet.title.substring(0, 55)+'"/></a>'+caption);
 	//$(".test").append(showProps(vid, "YouTube"));
-	//$(".test").append(showProps(vid.snippet, "snippet"));
-/*
-	var statsViews = "View count: "+vid.statistics.viewCount;
-	var statsLikes = "#Dislikes: "+vid.statistics.dislikeCount + " #Likes: "+vid.statistics.likeCount;
-	img.append("<div class='statViews'>"+statsViews+"</div>");
-	img.append("<div class='statLikes'>"+statsLikes+"</div><div class='clearfix'></div>");
-	*/
 	return youtube;
 };
 //Youtube API 
@@ -129,7 +123,6 @@ var googlePlus = function (person){
 	}
 	var content = p.find('.p-content');
 	var attachments = person.object.attachments;
-	//p.hide();
 	name.find('.profile-link').attr('href', person.actor.url);
 	name.find('.profile-link').attr('title',person.actor.displayName);
 	name.find('img').attr('src',person.actor.image.url);
@@ -145,11 +138,6 @@ var googlePlus = function (person){
 	var first = textParts.shift() + ".";
 	var readMore = '<p><a href="' + person.actor.url + '" class="readMore" target=_blank>Read more</a></p>';
 	content.html(title+first + readMore + descImg);
-	//content.html('<span class="description">' + person.object.content + '</span>' + descImg);
- 	//$(".test").append(showProps(person, "gPlusPerson"));
-	//$(".test").append(showProps(attachments[0], "gPlusPerson_Attachments"));
-	//$(".test").append(showProps(person.actor, "gPlusPerson_Actor"));
-	
 	return p;
 };
 //GOOGLE PLUS API CALLBACK
@@ -157,7 +145,7 @@ var getGooglePluses = function (search) {
 	//Sets API key for Google API
 	$("<h2>Google Plus</h2>").insertBefore('.google-pluses .col-one');
 	gapi.client.setApiKey('AIzaSyCrDYW6fz-QkEtSC08dnkoC7axlLdcuRSA');
-	//Parameters go here for the YouTube.Search method
+	//Parameters for the YouTube.Search method
 	var what = {query: search, maxResults: 20};
 	var result = gapi.client.request({
 		path: 'plus/v1/activities',
@@ -232,8 +220,6 @@ var getFlickrs = function (search) {
 				var lastImg= document.getElementById(picId);
 				var jLastImg = $(this).find("img");
 				if (lastImg) {
-					//alert(picId +"  w x h " + jLastImg.width() + " x " + jLastImg.height());
-					//alert(picId +" natural w x h " + lastImg.naturalWidth + " x " + lastImg.naturalHeight);
 					if (lastImg.naturalWidth < lastImg.naturalHeight || jLastImg.width() <  jLastImg.height()) {
 						var lastFlick = $("#flick"+j);
 						//alert("skinny");
@@ -248,10 +234,8 @@ var getFlickrs = function (search) {
 		}, 500); 
 		return false;
 	});
-
 };
-
-// takes error string and turns it into displayable DOM element
+// Turns error string into displayable DOM element
 var showError = function(error){
 	var errorElem = $('.templates .error').clone();
 	var errorText = '<p>' + error + '</p>';
