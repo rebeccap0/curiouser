@@ -583,6 +583,9 @@ fieldset.options {
   #logo {
    display: none;
   }
+  .container {
+    width: 100%;
+  }
   form { 
     padding-left: 0;
   }
