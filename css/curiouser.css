@@ -553,13 +553,13 @@ fieldset.options {
   }
 }
 @media (max-width: 770px) {
-  .google-pluses .col-one, .google-pluses .col-two {
+  .google-pluses .col-one, .google-pluses .col-two, .google-pluses {
     float: none;
     width: 350px;
     margin: 0 auto;
   }
- .flickrs, .youtubes, .google-pluses {
-    width: 600px;
+ .flickrs, .youtubes {
+    width: 525px;
   }
 }
 @media (max-width: 600px) {
@@ -573,15 +573,11 @@ fieldset.options {
   .listit-getter {
     width: 350px;
   }
-  .flickrs, .youtubes, .google-pluses{
-    width: 525px;
-  }
 }
 /* Only applies while screen is 525px or less */
 @media (max-width: 525px) {
- .flickrs, .youtubes, .google-pluses{
+ .flickrs, .youtubes {
     width: 250px;
-    width: 320px;
   } 
 }
 /* Only applies while screen is 320px or less */
@@ -592,7 +588,7 @@ fieldset.options {
   .container {
     width: 100%;
   }
-  .google-plus {
+  .google-plus, .google-pluses {
     width: 280px;
   }
   .google-plus img {
