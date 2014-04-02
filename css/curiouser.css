@@ -446,7 +446,7 @@ form {
   padding: 0px;
   width: 800px;
   width: 1200px;
-  padding-left:45px;
+  padding-left:50px;
 }
 label {
   color: #404853;
@@ -557,7 +557,7 @@ fieldset.options {
     width: 520px;
   }
 }
-@media (max-width: 750px) {
+@media (max-width: 770px) {
   .google-pluses .col-one, .google-pluses .col-two {
     float: none;
     width: 350px;
