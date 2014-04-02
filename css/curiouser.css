@@ -535,14 +535,11 @@ fieldset.options {
 @media (min-width: 320px) and (max-width: 400px) {
   html { background: green; }
 }
-
 @media (min-width: 1000px) {
   html { background: purple; }
 }
-@media (min-width: 1200px) {
-  html { background: green; }
-}
 */
+/* only applies while screen is 1000px or greater */
 @media (min-width: 1000px) {
   .flickrs, .youtubes, .google-pluses {
     width: 1000px;
@@ -555,7 +552,7 @@ fieldset.options {
    max-height: 450px;
   }
 }
-@media (max-width: 800px) {
+@media (min-width: 526px) and (max-width: 800px) {
   .flickrs, .youtubes {
     width: 520px;
   }
@@ -579,11 +576,13 @@ fieldset.options {
     width: 350px;
   }
 }
+/* Only applies while screen is 525px or less */
 @media (max-width: 525px) {
   .flickrs, .youtubes {
     width: 250px;
   }
 }
+/* Only applies while screen is 320px or less */
 @media (max-width: 320px) {
   #logo {
    display: none;
@@ -593,6 +592,10 @@ fieldset.options {
   }
   .google-plus {
     width: 280px;
+  }
+  .google-plus img {
+    max-width: 260px;
+    max-height: 260px;
   }
   form { 
     padding-left: 0;
