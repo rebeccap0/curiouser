@@ -113,7 +113,7 @@ var getYoutubes = function(search) {
 		$(".youtubes").fadeIn(1500,"swing");
 	});
    setTimeout(function(){ 
- 		$('.lala .youtubes').append("<h2>YouTube</h2>");
+ 		$('.lala .youtubes').prepend("<h2>YouTube</h2>");
 	}, 50);  	
 };
 //GOOGLE PLUS 
