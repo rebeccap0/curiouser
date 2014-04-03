@@ -1,15 +1,15 @@
 
 $(document).ready( function() {
 	var clearResults = function(whichAPI, addl) {
-		$(whichAPI).fadeOut(1500,"swing", function() {
+		//$(whichAPI).fadeOut(1500,"swing", function() {
 			//$(whichAPI +' > h2').hide();
 			$(whichAPI +' > h2').remove();
 			$(whichAPI + addl).html('');
-		});	
+		//});	
     }; 
 	$('.listit-getter').submit( function(event){
 		// zero out previous results
-		clearResults(".google-pluses", "div");	
+		clearResults(".google-pluses", " div");	
 		clearResults(".youtubes", "");
 		clearResults(".flickrs", " .polaroids");
 		// get the tags the user entered
@@ -113,7 +113,6 @@ var getYoutubes = function(search) {
 			var video = youtube(items);
 			if (video) {
 				$('.youtubes').append(video);
-				//$('.youtubes').fadeIn(1000);
 			}
 		});
 		$('.youtubes').append("<br class='clearfix'>");
