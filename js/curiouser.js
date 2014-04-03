@@ -1,12 +1,17 @@
 
 $(document).ready( function() {
+	var clearResults = function(whichAPI, addl) {
+		$(whichAPI).fadeOut(1500,"swing", function() {
+			//$(whichAPI +' > h2').hide();
+			$(whichAPI +' > h2').remove();
+			$(whichAPI + addl +' div').html('');
+		});	
+    }; 
 	$('.listit-getter').submit( function(event){
 		// zero out previous results
-		$('.lala .flickrs > h2').remove();
-		$('.lala .flickrs .polaroids').html('');
-		$('.lala .youtubes').html('');
-		$('.lala .google-pluses > h2').remove();
-		$('.lala .google-pluses div').html('');
+		clearResults(".google-pluses", "");	
+		clearResults(".youtubes", "");
+		clearResults(".flickrs", " .polaroids");
 		// get the tags the user entered
 		var tag = $(this).find("input[name='tag']").val();
 		var checked = $(".listit-getter input[name='youtube']").prop('checked');
@@ -35,7 +40,10 @@ $(document).ready( function() {
 		if (checked == true) {
 			getYoutubes(tag);
 		} else {
-			$('.lala .youtubes').html('');
+			clearResults(".youtubes", "");
+			//$(".youtubes").fadeOut(1500,"swing", function() {
+			//	$('.lala .youtubes').html('');
+			//});	
 		}
     });
     $(".listit-getter input[name='flickr']").click(function(){
@@ -44,24 +52,26 @@ $(document).ready( function() {
 		if (checked == true) {
 			getFlickrs(tag);
 		} else {
-			$('.lala .flickrs .polaroids').html('');
-			$('.lala .flickrs > h2').hide();
+			clearResults(".flickrs", " .polaroids");	
 		}
     });
-      $(".listit-getter input[name='google-plus']").click(function(){
+     $(".listit-getter input[name='google-plus']").click(function(){
 		var checked = $(this).prop('checked');
 		var tag = $(".listit-getter").find("input[name='tag']").val();
 		if (checked == true) {
 			getGooglePluses(tag);
 		} else {
-			$('.lala .google-pluses div').html('');
-			$('.lala .google-pluses > h2').hide();
+			clearResults(".google-pluses", "");	
 		}
     });
 
      $("#logo").hover(function() {
      	$(".circleSm").fadeToggle(5000,"swing");
-     	$(".circleMed").fadeToggle(5000,"swing");
+     	$(".alice").fadeToggle(3000,"swing");
+     	setTimeout(function(){ 
+     		$(".chesire").fadeToggle(7000,"swing");
+
+    	}, 50);  		
      });
 });	
 // Display an object's properties (non-inherited) and associated values
@@ -107,6 +117,7 @@ var getYoutubes = function(search) {
 			}
 		});
 		$('.youtubes').append("<br class='clearfix'>");
+		$(".youtubes").fadeIn(1500,"swing");
 	});
 };
 //GOOGLE PLUS 
@@ -165,6 +176,7 @@ var getGooglePluses = function (search) {
 			$('.google-pluses .col-one').html('Nothing was found.');
 		}
 		$('.google-pluses').append("<br class='clearfix'>");
+		$(".google-pluses").fadeIn(1500,"swing");
 	});
 };
 // Flickr 
@@ -206,7 +218,6 @@ var getFlickrs = function (search) {
 		$.each(img.items, function (i, picture){
 			var flickpic = polaroid(picture,i);
 			$('.flickrs .polaroids').append(flickpic);
-			$('.flickrs').fadeIn(1000);
 			if ( i == 50 ) {
 				return false;
 			}
@@ -231,6 +242,7 @@ var getFlickrs = function (search) {
 				}
 			});
 		}, 500); 
+		$(".flickrs").fadeIn(1500,"swing");
 		return false;
 	});
 };
