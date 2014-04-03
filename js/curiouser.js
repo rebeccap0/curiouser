@@ -14,17 +14,17 @@ $(document).ready( function() {
 		clearResults(".google-pluses", " div");
 		// get the tags the user entered
 		var tag = $(this).find("input[name='tag']").val();
-		checked = $(".listit-getter input[name='google-plus']").prop('checked');
+		checked = $(".listit-getter input[name='flickr']").prop('checked');
 		if (checked) {
-			getGooglePluses(tag);
+			getFlickrs(tag);
 		}
 		var checked = $(".listit-getter input[name='youtube']").prop('checked');
 		if (checked) {
 			getYoutubes(tag);
 		}
-		checked = $(".listit-getter input[name='flickr']").prop('checked');
+		checked = $(".listit-getter input[name='google-plus']").prop('checked');
 		if (checked) {
-			getFlickrs(tag);
+			getGooglePluses(tag);
 		}
 	});
 
