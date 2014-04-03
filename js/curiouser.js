@@ -5,7 +5,7 @@ $(document).ready( function() {
 			//$(whichAPI +' > h2').hide();
 			$(whichAPI +' > h2').remove();
 			$(whichAPI + addl).html('');
-		//});	
+		});	
     }; 
 	$('.listit-getter').submit( function(event){
 		// zero out previous results
