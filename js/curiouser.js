@@ -66,7 +66,6 @@ $(document).ready( function() {
      	$(".alice").fadeToggle(3000,"swing");
      	setTimeout(function(){ 
      		$(".chesire").fadeToggle(7000,"swing");
-
     	}, 50);  		
      });
 });	
@@ -113,7 +112,9 @@ var getYoutubes = function(search) {
 		$('.youtubes').append("<br class='clearfix'>");
 		$(".youtubes").fadeIn(1500,"swing");
 	});
-	$('.lala .youtubes').append("<h2>YouTube</h2>");
+   setTimeout(function(){ 
+ 		$('.lala .youtubes').append("<h2>YouTube</h2>");
+	}, 50);  	
 };
 //GOOGLE PLUS 
 var googlePlus = function (person){
