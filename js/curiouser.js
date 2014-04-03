@@ -1,7 +1,7 @@
 
 $(document).ready( function() {
 	var clearResults = function(whichAPI, addl) {
-		//$(whichAPI).fadeOut(1500,"swing", function() {
+		$(whichAPI).fadeOut(100,"swing", function() {
 			//$(whichAPI +' > h2').hide();
 			$(whichAPI +' > h2').remove();
 			$(whichAPI + addl).html('');
@@ -9,9 +9,9 @@ $(document).ready( function() {
     }; 
 	$('.listit-getter').submit( function(event){
 		// zero out previous results
-		clearResults(".google-pluses", " div");	
-		clearResults(".youtubes", "");
 		clearResults(".flickrs", " .polaroids");
+		clearResults(".youtubes", "");
+		clearResults(".google-pluses", " div");
 		// get the tags the user entered
 		var tag = $(this).find("input[name='tag']").val();
 		checked = $(".listit-getter input[name='google-plus']").prop('checked');
@@ -61,7 +61,7 @@ $(document).ready( function() {
 		if (checked == true) {
 			getGooglePluses(tag);
 		} else {
-			clearResults(".google-pluses", "div");	
+			clearResults(".google-pluses", " div");	
 		}
     });
 
