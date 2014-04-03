@@ -14,6 +14,10 @@ $(document).ready( function() {
 		clearResults(".flickrs", " .polaroids");
 		// get the tags the user entered
 		var tag = $(this).find("input[name='tag']").val();
+		checked = $(".listit-getter input[name='google-plus']").prop('checked');
+		if (checked) {
+			getGooglePluses(tag);
+		}
 		var checked = $(".listit-getter input[name='youtube']").prop('checked');
 		if (checked) {
 			getYoutubes(tag);
@@ -21,10 +25,6 @@ $(document).ready( function() {
 		checked = $(".listit-getter input[name='flickr']").prop('checked');
 		if (checked) {
 			getFlickrs(tag);
-		}
-		checked = $(".listit-getter input[name='google-plus']").prop('checked');
-		if (checked) {
-			getGooglePluses(tag);
 		}
 	});
 
