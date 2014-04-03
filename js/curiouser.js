@@ -1,7 +1,7 @@
 
 $(document).ready( function() {
 	var clearResults = function(whichAPI, addl) {
-		$(whichAPI).fadeOut(100,"swing", function() {
+		$(whichAPI).fadeOut(25,"swing", function() {
 			$(whichAPI +' > h2').remove();
 			$(whichAPI + addl).html('');
 		});	
