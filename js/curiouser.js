@@ -95,7 +95,6 @@ var youtube = function (vid){
 };
 //Youtube API 
 var getYoutubes = function(search) {
-	$('.lala .youtubes').append("<h2>YouTube</h2>");
 	// set key for Google API
 	gapi.client.setApiKey('AIzaSyCrDYW6fz-QkEtSC08dnkoC7axlLdcuRSA');
 	var what = {part: "snippet", q: search, maxResults: 50, order: "viewCount"};
@@ -114,6 +113,7 @@ var getYoutubes = function(search) {
 		$('.youtubes').append("<br class='clearfix'>");
 		$(".youtubes").fadeIn(1500,"swing");
 	});
+	$('.lala .youtubes').append("<h2>YouTube</h2>");
 };
 //GOOGLE PLUS 
 var googlePlus = function (person){
@@ -148,7 +148,6 @@ var googlePlus = function (person){
 //GOOGLE PLUS API CALLBACK
 var getGooglePluses = function (search) {
 	//Sets API key for Google API
-	$("<h2>Google Plus</h2>").insertBefore('.google-pluses .col-one');
 	gapi.client.setApiKey('AIzaSyCrDYW6fz-QkEtSC08dnkoC7axlLdcuRSA');
 	//Parameters for the YouTube.Search method
 	var what = {query: search, maxResults: 20};
@@ -173,6 +172,7 @@ var getGooglePluses = function (search) {
 		$('.google-pluses').append("<br class='clearfix'>");
 		$(".google-pluses").fadeIn(1500,"swing");
 	});
+	$("<h2>Google Plus</h2>").insertBefore('.google-pluses .col-one');
 };
 // Flickr 
 var flickr = function (flickpic,i){
@@ -202,7 +202,6 @@ var polaroid = function (flickpic,i){
 }
 // Flickr Search
 var getFlickrs = function (search) {
-	$("<h2>Flickr</h2>").insertBefore('.flickrs .polaroids');
 	var flickrAPI = 'http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?';
 	var result = $.getJSON( flickrAPI ,
         {
@@ -240,6 +239,7 @@ var getFlickrs = function (search) {
 		$(".flickrs").fadeIn(1500,"swing");
 		return false;
 	});
+	$("<h2>Flickr</h2>").insertBefore('.flickrs .polaroids');
 };
 // Turns error string into displayable DOM element
 var showError = function(error){
