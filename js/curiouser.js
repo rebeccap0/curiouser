@@ -113,7 +113,7 @@ var getYoutubes = function(search) {
 			var video = youtube(items);
 			if (video) {
 				$('.youtubes').append(video);
-				$('.youtubes').fadeIn(1000);
+				//$('.youtubes').fadeIn(1000);
 			}
 		});
 		$('.youtubes').append("<br class='clearfix'>");
