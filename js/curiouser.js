@@ -4,12 +4,12 @@ $(document).ready( function() {
 		$(whichAPI).fadeOut(1500,"swing", function() {
 			//$(whichAPI +' > h2').hide();
 			$(whichAPI +' > h2').remove();
-			$(whichAPI + addl +' div').html('');
+			$(whichAPI + addl).html('');
 		});	
     }; 
 	$('.listit-getter').submit( function(event){
 		// zero out previous results
-		clearResults(".google-pluses", "");	
+		clearResults(".google-pluses", "div");	
 		clearResults(".youtubes", "");
 		clearResults(".flickrs", " .polaroids");
 		// get the tags the user entered
@@ -61,7 +61,7 @@ $(document).ready( function() {
 		if (checked == true) {
 			getGooglePluses(tag);
 		} else {
-			clearResults(".google-pluses", "");	
+			clearResults(".google-pluses", "div");	
 		}
     });
 
