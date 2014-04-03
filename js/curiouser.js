@@ -2,7 +2,6 @@
 $(document).ready( function() {
 	var clearResults = function(whichAPI, addl) {
 		$(whichAPI).fadeOut(100,"swing", function() {
-			//$(whichAPI +' > h2').hide();
 			$(whichAPI +' > h2').remove();
 			$(whichAPI + addl).html('');
 		});	
@@ -41,9 +40,6 @@ $(document).ready( function() {
 			getYoutubes(tag);
 		} else {
 			clearResults(".youtubes", "");
-			//$(".youtubes").fadeOut(1500,"swing", function() {
-			//	$('.lala .youtubes').html('');
-			//});	
 		}
     });
     $(".listit-getter input[name='flickr']").click(function(){
